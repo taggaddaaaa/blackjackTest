@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html data-ng-app="blackjack">
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>Blackjack Game for recruitment test of YouSign team.</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no" />
+
+<!--    <style>-->
+<!--        /* This helps the ng-show/ng-hide animations start at the right place. */-->
+<!--        /* Since Angular has this but needs to load, this gives us the class early. */-->
+<!--        .ng-hide {-->
+<!--            display: none!important;-->
+<!--        }-->
+<!--    </style>-->
+
+    <!-- Begin: Vendor CSS -->
+    <link href="bower_components/bulma/css/bulma.min.css" rel="stylesheet">
+    <!-- End: Vendor CSS -->
+
+    <!-- Begin: Source CSS -->
+    <link href="assets/styles/blackjack.css" rel="stylesheet">
+    <!-- End: Source CSS -->
+
+
+</head>
+<body>
+<div data-ng-include="'app/layout/deck.html'"></div>
+
+<!-- Begin: Vendor JS -->
+<script src="bower_components/angular/angular.min.js"></script>
+<!-- End: Vendor JS -->
+
+<!-- Begin: Source JS -->
+<script src="app/blackjack.module.js"></script>
+
+<script src="app/game/game.module.js"></script>
+<script src="app/game/game.controller.js"></script>
+<!-- End: Source JS -->
+</body>
+</html>
